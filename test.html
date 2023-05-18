@@ -1,0 +1,123 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Frijole&family=Prompt&display=swap" rel="stylesheet" />
+<!--BODY-->
+<body class="custom-bg text-white">
+  <!--NAVBAR-->
+  <nav class="fixed-top sticky p-2 w-100">
+    <div class="d-flex flex-row justify-content-between align-items-center">
+      <div class="col">
+        <!--SLIDER-->
+        <button class="btn btn-outline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <i class="fa-solid fa-bars text-white fa-lg"></i></button>
+        <div class="offcanvas offcanvas-start bg-dark " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <img src="https://assets.codepen.io/7440297/Group+1.png" alt="" width="64" id="offcanvasRightLabel" />
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body ">
+            <!--SLIDER-BODY-->
+            <a class="dropdown-item text-white" href="#">Menu</a>
+            <a class="dropdown-item text-white" href="#">Delivery</a>
+            <a class="dropdown-item text-white" href="#">Locations</a>
+            <a class="dropdown-item text-white" href="#">About</a>
+          </div>
+        </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+        <img src="https://assets.codepen.io/7440297/Group+1.png" alt="" class="logo" />
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-light float-end">
+          Menu
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!--VIEW-->
+  <div class=" w-100 h-100" id="scrollify-items">
+<!--CONTENT-->
+    <div class="bg-dark position-relative scrollify" id="section-1">
+      <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGFjb3N8ZW58MHx8MHx8&auto=format&fit=crop&w=1200&q=60" class="cover grainy" />
+      <div class="position-absolute fixed-bottom overlay p-4 rounded-2">
+        <h1 class="neon">You're in the Right Place, Amigo.</h1>
+        <p>
+          Get Ready for the Best Tacos You've Ever Had, with Fresh Ingredients and
+          Authentic Flavors.
+        </p>
+        <div class="d-flex gap-2 p-2 ">
+          <button class="btn btn-outline-light px-4 py-3">
+            <!--           <i class="fa-solid fa-horse fa-2xl"></i> -->
+            Delivery
+          </button>
+          <button class="btn btn-outline-light">
+            <!--           <i class="fa-solid fa-hat-cowboy fa-2xl"></i> -->
+            Takeout
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Section-->
+    <div class="bg-dark position-relative scrollify" id="section-2">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1564767655658-4e6b365884ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHRhY29zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1200&q=60" class="cover" />
+      </figure>
+      <div class="position-absolute fixed-bottom overlay p-4  rounded-2">
+        <h1 class="neon">Tacos Are Our Love Language</h1>
+        <p> Our love for tacos is like no other - it's a fiery passion that can be tasted in every bite. From our homemade salsas to our handcrafted tortillas, every element of our tacos is made with love, care, and the perfect balance of spices.</p>
+      </div>
+    </div>
+    <!--Section-->
+    <div class="bg-dark position-relative scrollify" id="section-3">
+      <video poster="https://sb.vox1.net/video/poligonBG.jpg" class="cover" playsinline autoplay muted loop>
+        <source src="https://assets.codepen.io/7440297/production+ID_4781575.mp4" type="video/mp4">
+      </video>
+      <div class="position-absolute fixed-bottom overlay p-4  rounded-2">
+        <h1 class="neon">Perfected over generations</h1>
+        <p>
+          Our mouth-watering steak tacos are a perfect example of this - each cut of meat is carefully selected and expertly prepared to create a flavor explosion that will leave you wanting more.Video by Denys Gromov from Pexels
+        </p>
+      </div>
+    </div>
+    <!--Section-->
+    <div class="bg-dark position-relative scrollify" id="section-4">
+      <figure>
+        <img src="https://www.teamlab.art/images/pc-s/15311" class="cover" />
+      </figure>
+      <div class="position-absolute fixed-bottom overlay p-4  rounded-2">
+        <h1 class="neon">A Taco Place Like No Other.</h1>
+        <p>
+          We've taken the traditional taco and turned it on its head, creating a dining experience that's both futuristic and experimental. Our virtual reality technology transports you to a world of flavor, where you can see, taste, and smell the perfect taco before it even touches your lips.
+        </p>
+      </div>
+    </div>
+    <!--Section-->
+    <div class="bg-dark position-relative scrollify" id="section-5">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1592044903782-9836f74027c0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbnQlMjBiYXNlZCUyMHRhY29zfGVufDB8fDB8fA%3D%3D" class="cover" />
+        <div class="position-absolute fixed-bottom overlay p-4 rounded-2">
+          <h1 class="neon">No Meat? No Problem.</h1>
+          <p>
+            Our Plant-Based Recipes Will Blow Your Mind and Leave You Wanting More.
+          </p>
+        </div>
+    </div>
+    <!--Section-->
+    <div class="bg-dark d-flex flex-column justify-content-center position-relative scrollify" id="section-6">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/delish-tequila-lime-chicken-tacos-horizontal-1530818873.jpg" class="cover" />
+      <div class="position-absolute fixed-bottom overlay p-4 ">
+        <div class="card text-center transparent">
+          <div class="card-body ">
+            <h1 class="card-title neon">Taco Dirty To Me</h1>
+            <p class="card-text">You know you want to</p>
+            <div class="d-flex justify-content-center gap-2">
+              <button class="btn btn-outline-light">Delivery</button>
+              <button class="btn btn-outline-light">Takeout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!--Section-->
+  </div>
+</body>

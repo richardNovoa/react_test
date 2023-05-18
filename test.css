@@ -1,0 +1,157 @@
+body {
+	font-family: 'Frijole', cursive;
+	cursor: url(https://cdn.custom-cursor.com/db/cursor/32/Taco_Cursor.png),
+		default !important;
+}
+button:hover,
+a:hover {
+	cursor: url(https://cdn.custom-cursor.com/db/6848/32/halloween-sugar-skull-cursor.png),
+		pointer !important;
+}
+
+p {
+	font-family: 'Forum', cursive;
+	font-size: 20px;
+}
+
+.sticky {
+	top: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.9);
+}
+
+button {
+	font-family: 'Prompt', sans-serif;
+}
+.dropdown-toggle::after {
+	content: none;
+}
+ul .a {
+	list-style-type: none;
+}
+
+.dropdown-item {
+	font-family: 'Forum', sans-serif;
+	font-size: 20px;
+	color: white;
+}
+.dropdow-item:hover {
+	color: black !important;
+}
+.overlay {
+	background: linear-gradient(360deg, #000000 -22.39%, rgba(0, 0, 0, 0) 91.71%);
+	z-index: 1;
+}
+.transparent {
+	background: none;
+}
+.logo {
+	width: 6vw;
+	min-width: 72px;
+	height: auto;
+}
+
+.custom-bg {
+	background-color: black;
+}
+
+body:after {
+	animation: grain 16s steps(10) infinite;
+	background-image: url('https://st3.depositphotos.com/7636160/15895/i/600/depositphotos_158950424-stock-photo-black-grainy-plaster-wall-texture.jpg');
+	content: '';
+	height: 300%;
+	left: -50%;
+	opacity: 0.24;
+	position: fixed;
+	top: -100%;
+	width: 300%;
+}
+
+@keyframes grain {
+	0%,
+	100% {
+		transform: translate(0, 0);
+	}
+	10% {
+		transform: translate(-5%, -10%);
+	}
+	20% {
+		transform: translate(-15%, 5%);
+	}
+	30% {
+		transform: translate(7%, -25%);
+	}
+	40% {
+		transform: translate(-5%, 25%);
+	}
+	50% {
+		transform: translate(-15%, 10%);
+	}
+	60% {
+		transform: translate(15%, 0%);
+	}
+	70% {
+		transform: translate(0%, 15%);
+	}
+	80% {
+		transform: translate(3%, 35%);
+	}
+	90% {
+		transform: translate(-10%, 10%);
+	}
+}
+
+.neon {
+	text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500,
+		0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+	color: #fff6a9;
+	animation: blink 12s infinite;
+	-webkit-animation: blink 12s infinite;
+}
+
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+	}
+}
+
+.bg-dark .position-relative mb-4 {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+}
+figure {
+	overflow: hidden;
+	position: relative;
+
+	&::before {
+		display: block;
+		content: '';
+		padding-top: 39.0625%;
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+}
+
+.scrollify {
+	height: 100vh;
+	width: 100%;
+}
+
+.cover {
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	overflow: hidden;
+}
