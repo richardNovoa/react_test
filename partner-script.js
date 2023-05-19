@@ -19,14 +19,17 @@ function triggerEvent2() {
 }
 
 // Tagging
-var ClickEvent1 = document.getElementById("event1");
-var ClickEvent2 = document.getElementById("event2");
 
 //Listening
-ClickEvent1.addEventListener("click", function () {
-  triggerEvent1;
-});
+document.addEventListener("DOMContentLoaded", function () {
+  var ClickEvent1 = document.getElementById("event1");
+  var ClickEvent2 = document.getElementById("event2");
 
-ClickEvent2.addEventListener("click", function () {
-  triggerEvent2;
+  ClickEvent1.addEventListener("click", function () {
+    triggerEvent1;
+  });
+
+  ClickEvent2.addEventListener("click", function () {
+    triggerEvent2;
+  });
 });
