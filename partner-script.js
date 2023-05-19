@@ -26,10 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var ClickEvent2 = document.getElementById("event2");
 
   ClickEvent1.addEventListener("click", function () {
-    triggerEvent1;
+    triggerEvent1();
   });
 
   ClickEvent2.addEventListener("click", function () {
-    triggerEvent2;
+    triggerEvent2();
   });
 });
