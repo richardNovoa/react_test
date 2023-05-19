@@ -1,15 +1,16 @@
-//TOKEN
-mixpanel.init("edbf3d7fe7a49aad5ad8f6cda0898dac", { debug: true });
 
+window.addEventListener('message', function(event) {
+  if (event.origin === 'http://localhost:3000/') {
+    var eventData = event.data; 
+    var iframeURL = eventData.iframeURL;
 //Start
 mixpanel.time_event("Time on Page");
-let x = 1;
 //End
 document.addEventListener(`visibilitychange`, function () {
   if (document.visibilityState === "hidden") {
     mixpanel.set_config({ api_transport: "sendBeacon" });
     mixpanel.track("Time on Page", {
-      counter: x,
+      source: iframeURL
     });
     mixpanel.people.set({ foo: "bar" });
     x++;
@@ -21,3 +22,10 @@ document.addEventListener(`visibilitychange`, function () {
     mixpanel.time_event("Time on Page");
   }
 });
+  }}
+
+
+
+
+
+

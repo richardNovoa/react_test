@@ -25,6 +25,21 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React ENV</title>
+    <script>
+      var iframe = document.getElementById("test-iframe");
+
+      function sendMessageToChildPage() {
+        var parentPageUrl = window.location.href;
+
+        // Create a data object with the necessary information
+        var data = {
+          source: parentPageUrl,
+        };
+
+        // Send the data to the child page
+        iframe.contentWindow.postMessage(data, "http://localhost:3000");
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

@@ -2,7 +2,7 @@ function App() {
   return (
     <>
       <iframe
-        className="custom-iframe"
+        className="test-iframe"
         src="https://novoa.design"
         title="iframe"
       ></iframe>
