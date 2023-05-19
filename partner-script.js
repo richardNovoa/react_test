@@ -1,3 +1,6 @@
+//TOKEN
+mixpanel.init("edbf3d7fe7a49aad5ad8f6cda0898dac", { debug: true });
+
 //Start
 mixpanel.time_event("Time on Page");
 let x = 1;
