@@ -1,17 +1,17 @@
-//Start
-mixpanel.time_event("Time on Page");
-//End
-document.addEventListener(`visibilitychange`, function () {
-  if (document.visibilityState === "hidden") {
-    mixpanel.set_config({ api_transport: "sendBeacon" });
-    mixpanel.track("Time on Page", {
-      source: iframeURL,
-    });
-  } else if (document.visibilityState === "pagehide") {
-    mixpanel.set_config({ api_transport: "sendBeacon" });
-    mixpanel.track("Time on Page");
-    mixpanel.people.set({ foo: "bar" });
-  } else if (document.visibilityState === "visible") {
-    mixpanel.time_event("Time on Page");
-  }
-});
+function triggerEvent1() {
+  var eventData = {
+    eventName: "Click",
+    eventTrigger: "Event 1",
+  };
+  window.parent.postMessage(eventData, "*");
+  console.log("Event 1");
+}
+
+function triggerEvent2() {
+  var eventData = {
+    eventName: "Click",
+    eventTrigger: "Event 2",
+  };
+  window.parent.postMessage(eventData, "*");
+  console.log("Event 2");
+}

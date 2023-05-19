@@ -3,7 +3,7 @@ function App() {
     <>
       <iframe
         className="test-iframe"
-        src="https://novoa.design"
+        src="https://www.novoa.design/react-test"
         title="iframe"
       ></iframe>
     </>
